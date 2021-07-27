@@ -1,0 +1,275 @@
+/* /* .header-section{
+    background-image: url("../image/Vector.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+
+} */
+body{
+    background-color: #f6f5f1;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+    .nav-item  .nav-link{
+      color: white;
+  } 
+  .to-search  a i{
+    color: white;
+  }
+  .navbar-nav .nav-item .nav-link{
+    color: white !important;
+    letter-spacing: 1px !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover{
+    
+    opacity: 1;
+    background: #ffc554;
+      
+      -webkit-transform: rotate(-10deg) !important;
+      -ms-transform: rotate(-10deg) !important;
+      transform: rotate(-20deg) !important;
+      
+      -webkit-transition: all 0.3s !important;
+      -o-transition: all 0.3s !important;
+      transition: all 0.3s !important;
+  
+  }
+  
+  /*********************** Section-One  ******************/
+  .section-one{
+    background-image: url("../../images/Vector.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+  }
+  .title-oone{
+    margin-top: 50px !important;
+  }
+  .title-one span {
+    font-weight: 800;
+  }
+  .first-para{
+    opacity: 1;
+    color: #5e6e82;
+    line-height: 38px;
+      letter-spacing: 1px;
+  }
+  .number{
+    color: #ffc554;
+  }
+  .imagefont{
+    width: 100%;
+    height: auto;
+  }
+  .mtt-2{
+    margin-top: 6rem !important;
+  }
+  
+  @media screen and (max-width: 400px) {
+     .imagefont{
+      width:75%;  
+    }
+  
+  
+    .mtt-2{
+      margin-top: 1rem !important;
+    }
+    .first-para{
+      font-size: 18px;
+    }
+    .history .image-onee{
+      display: none;
+    }
+    .fun-fact{
+      margin-bottom: 10px;
+    }
+    .my-para{
+      text-align: center;
+    }
+    
+  }
+  .question{
+    width: 56%;
+    height: 18%;
+  }
+  .image-footer{
+    width: 70%;
+    height: 70%;
+  }
+  /*------------Section-Tow  ------------*/
+  /*------------About Section --------- */
+  .title-about{
+    font-weight: 700;
+      font-size: 50px;
+  }
+  /*------- Fun Fact  -----------*/
+  .fun-fact{
+    width: 250px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+    text-align: center;
+  
+  }
+  .fun-fact .chiffre{
+    height: 52px;
+    padding-top: 4px;
+    text-align: center;
+    width: 71px;
+   background-color: black;
+  border-radius: 50%;
+  color: white;
+    border-radius: 50px;
+  }
+  .fun-fact p{
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  /*----------- History  ---------*/
+  .history h5{
+    font-family: "Lora", serif;
+      font-size: 16px;
+      color: #555555;
+      margin-bottom: 18px;
+  }
+  .history h2{
+    line-height: 1.25;
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .history h4{
+    margin-bottom: 25px;
+      color: #ffc554;
+      font-size: 24px;
+      font-weight: 400;
+  }
+  .history p{
+    opacity: 1;
+    color: #5e6e82;
+    line-height: 38px;
+      letter-spacing: 1px;
+  
+    font-size: 15px;
+  
+  }
+  .history a {
+    text-decoration: none;
+    color: #555555;
+  }
+  
+  /*-------------- Menu  -------------*/
+  .title-menu h1{
+    font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.1;
+  }
+  .title-menu p{
+    opacity: 1;
+    color: #5e6e82;
+    line-height: 38px;
+      letter-spacing: 1px;
+  
+    font-size: 15px;
+  }
+  .menu-chicken img{
+    width: 100px;
+  border-radius: 50%;
+  }
+  .menuu h5{
+    font-weight: bold;
+  }
+  .menuu .menu-price{
+    font-size: 24px;
+    color: #ffc554;
+  }
+  .modal-header img{
+  margin-top: -15px;
+  }
+  .modal-footer p{
+    opacity: 1;
+    color: #5e6e82;
+    line-height: 20px;
+      letter-spacing: 1px;
+  
+    font-size: 13px;
+  }
+  .modal-footer .submit{
+    background-color: white;
+    color: #555555;
+    padding: 9px 90px 10px 74px;
+  
+  }
+  .events{
+    background-image: url("../../images/event-02.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+  }
+  .event-bg h1{
+    
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.2;
+      color: #222222;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+  }
+  .event-bg p{
+    font-weight: 400;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #666666;
+  }
+  .event-bg .timing h2{
+    font-weight: 700;
+    font-size: 50px;
+    color: #ff806e;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  
+  }
+  .event-bg .timing p{
+    font-weight: 700;
+    font-size: 12px;
+    color: #999999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .event-bg a {
+    font-weight: 400;
+      font-size: 12px;
+      padding-bottom: 10px !important;
+      color: #222222;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+  }
+  
+  footer h2{
+    color: white;
+    font-weight: 500;
+  }
+  footer {
+   background-color: #0b1727!important;
+  }
+  footer ul li{
+    list-style-type: none;
+  }
+  footer ul li a {
+    text-decoration: none;
+    
+  color: #999694 ;
+  
+  }
+  .pied-page{
+    background-color: black;
+  }
+  .pied-page p{
+    color: white;
+  }
+  .pied-page a{
+    color: white !important;
+  }
