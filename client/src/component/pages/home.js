@@ -7,12 +7,12 @@ import {useEffect} from "react"
 import {useSelector,useDispatch} from 'react-redux'
 import {allMenu} from "../actions/menu"
 const Home = () => {
-  const menu = useSelector(state => state)
+  const menu = useSelector(state => state.menustore)
   const dispatch = useDispatch()
-useEffect(() => {
+  useEffect(() => {
   dispatch(allMenu())
-}, [])
-  console.log("meeeeeeee",menu)
+     }, [])
+  console.log("menuuuu",menu)
   return(
     <div>
         <Navbar/>
@@ -134,13 +134,20 @@ useEffect(() => {
              <h1>Delicious Menu</h1>
              <div className=" my-para "><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
              
-           {menu.menustore.menu[0].map((el,key)=>(
-             <div key={key}>
-               <h1>{el}</h1>
              </div>
-           ))}
-             </div>
-            
+            <div className="d-flex justify-content-around" >
+            {menu.map((el,key )=> (
+              <div className="card w-25 " key={key}>
+              <img src={el.image} className="card-img-top" alt="..."/>
+              <div className="card-body">
+              <h5 className="card-title">{el.name}</h5>
+                <p className="card-text">{el.description}</p>
+                <p className="card-text"><small className="menu-price">{el.price}</small></p>
+                <button className="btn btn-oraange">Commander</button>
+              </div>
+            </div>
+        ))} 
+            </div>
             </div>
             </div>
  <Footer/>

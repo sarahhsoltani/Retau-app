@@ -1,13 +1,17 @@
-import { MENU } from "../actions/types";
+
 const menu = [];
 
 export const menuReducer = (state = menu, action) => {
-  if (action.type === MENU) {
-    return {
-      ...state,
-      menu: action.payload
-    
-    };
-  } else return state;
+  switch (action.type){
+    case "GET_FABRIQUE_SUCCEDED":
+      
+       return action.payload
+       
+        
+      
+break
+
+  }
+  return state
 };
 
