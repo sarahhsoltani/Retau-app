@@ -31,8 +31,8 @@ const Navbar = () => {
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item">
                     <a className="nav-link active" aria-current="page" href="index.html"
-                      >Home</a
-                    >
+                      >Home</a>
+                    
                   </li>
                 
                   <li className="nav-item">
@@ -40,7 +40,7 @@ const Navbar = () => {
                     
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="chefs.html">Chefs</a>
+                    <a className="nav-link" href="chefs.html">Panier</a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="contact.html">Contact</a>

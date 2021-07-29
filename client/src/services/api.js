@@ -12,6 +12,17 @@ function addNewMenu(title, price,image,description ) {
     return Api.get("/get");
   }
 
+//deleteMenu
+function deleteMenus(id) {
+    return Api.delete(`/delete/${id}`);
+  }
 
-  export {addNewMenu,getAllMenus} 
-  export default {addNewMenu,getAllMenus}
+  //update Menu 
+
+  function updateMenus(id) {
+    return Api.put(`/update/${id}`);
+  }
+
+
+  export {addNewMenu,getAllMenus,deleteMenus,updateMenus} 
+  export default {addNewMenu,getAllMenus,deleteMenus,updateMenus}

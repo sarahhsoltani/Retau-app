@@ -2,14 +2,12 @@ import React from 'react'
 import {Form,Button,Modal} from "react-bootstrap"
 import {useState} from 'react';
 import {addMenuApi} from "../../../redux/actions/menu"
-import {useDispatch,useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 const AddMenu = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const dispatch = useDispatch()
-
-
 
 const [input,setInput]=useState({title:"",price:"", image:"" ,description:""})
 

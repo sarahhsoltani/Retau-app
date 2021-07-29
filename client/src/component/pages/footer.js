@@ -49,17 +49,17 @@ const Footer = () => {
                       </div>
                   </div>
                
-                  <div className="row">
-                      <div className="col-md-3 col-sm-6 col-3">
+                  <div className="d-flex">
+                      <div >
                           <img src="../image/breakfast-2.jpg" className="h-75 w-75 image-fluid" alt=""/>   
                       </div>
-                      <div className="col-md-3 col-sm-6 col-3" >
+                      <div  >
                           <img src="../image/dinner-3.jpg" className="h-75 w-75 image-fluid" alt=""/>
                       </div>
-                      <div className="col-md-3 col-sm-6 col-3">
+                      <div >
                           <img src="image/lunch-5.jpg" className="h-75 w-75 image-fluid" alt=""/>
                       </div>
-                      <div className="col-md-3 col-sm-6 col-3">
+                      <div >
                           <img src="image/lunch-7.jpg" className="h-75 w-75 image-fluid" alt=""/>
                       </div>
                   </div>

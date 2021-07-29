@@ -1,1 +1,0 @@
-export const url = "http://localhost:6000/RestoApp/menu/get";

@@ -207,8 +207,11 @@ body{
     background-size: cover;
     width: 100%;
   }
+  .event-bg{
+    padding: 16px;
+  }
   .event-bg h1{
-    
+      
       font-weight: 500;
       font-size: 22px;
       line-height: 1.2;

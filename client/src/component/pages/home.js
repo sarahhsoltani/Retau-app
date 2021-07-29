@@ -7,7 +7,7 @@ import {useSelector,useDispatch} from 'react-redux'
 import {getMenuAPI} from "../../redux/actions/menu"
 const Home = () => {
   const datas = useSelector(state => state.menuReducer.datas)
-const loading = useSelector(state => state.menuReducer.loading)
+
 
 const dispatch = useDispatch()
 
@@ -31,13 +31,9 @@ const dispatch = useDispatch()
             </div>
             <div className="col-md-8 title-one  text-center " >
               <h1 className="me-2 title-one mtt-2 " >
-                The Spectacle
-                <span
-                  >Before Us <br />
-                  Was Indeed</span
-                >
-                Sublime.
-              </h1>
+                The Spectacle 
+                <span>  Before Us <br />
+                  Was Indeed </span >Sublime.</h1>
               <p className="d-none d-md-block first-para   ">
                 Apparently, we had reached a great height in the atmosphere, for <br/>
                 the sky was a dead black, and which lifts the horizon of the sea <br/>
@@ -152,6 +148,41 @@ const dispatch = useDispatch()
             </div>
             </div>
             </div>
+            {/* event */}
+            <h1  className="text-center my-4 ">Events</h1>
+           <div className="container-fluid events">
+           
+       <div className="row">
+    <div className="col-md-6">
+     <img className="image-fluid w-100 h-100" src="image/event-02.jpg" alt=""/>
+    </div>
+    <div className="col-md-6 ">
+     <div className="event-bg bg-white mt-5">
+      <h1 className="pt-3">Wines during specific night</h1>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing  maiores cupiditate aliquam  corrupti beatae expedita officiis soluta quidem sit odio vitae!</p>
+      <div className="row timing">
+        <div className="col-md-3 col-sm-3 col-3 ">
+          <h2>25</h2>
+          <p>Days</p>
+        </div>
+        <div className="col-md-3  col-sm-3 col-3">
+         <h2>12</h2>
+         <p>Days</p>
+       </div>
+       <div className="col-md-3 col-sm-3 col-3">
+         <h2>48</h2>
+         <p>Days</p>
+       </div>
+       <div className="col-md-3 col-sm-3 col-3">
+         <h2>05</h2>
+         <p>Days</p>
+       </div>
+      </div>
+      <a class="pb-2" href="#">View Details  <i class="fas fa-share "></i></a>
+     </div>
+    </div>
+       </div>
+           </div>
  <Footer/>
     </div>
    )

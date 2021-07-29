@@ -1,5 +1,4 @@
-import {ADD_MENU ,GET_MENU} from "./types"
- import axios from 'axios'
+import {ADD_MENU ,GET_MENU,DELETE_MENU,UPDATE_MENU } from "./types"
 // import { GET_MENU } from "../actions/types";
 // export function allMenu( ) {
 //     return async dispatch =>{
@@ -32,8 +31,8 @@ import {ADD_MENU ,GET_MENU} from "./types"
 // import {fetchMenu} from '../../component/request'
 // import {addMenu}from "../../component/request"
 // import { ADD_MENU_API } from '../../component/shered/apiUrls';
-import {addNewMenu,getAllMenus}   from "../../services/api"
-
+import {addNewMenu,getAllMenus,deleteMenus,updateMenus}   from "../../services/api"
+import axios from "axios"
 // export function allMenu() {
 
 
@@ -110,3 +109,35 @@ catch (error) {
               console.log(error);
              }
 }
+//deleteMenu
+// export const deleteFood = (payload) => ({
+//     type: DELETE_MENU,
+//     payload,
+//   });
+export const deleteMenu = (id)=> async (dispatch) => {
+    try {
+      await deleteMenus (id);
+      dispatch({
+        type:DELETE_MENU,
+        payload:id
+    })
+      console.log("delete")
+      dispatch(getMenuAPI);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+// update Menu
+export const updateMenu = (id,title, price,image,description ) => async dispatch => {
+    try {
+      const res = await axios.put(`http://localhost:4000/RestoApp/menu/update/${id}`,{title, price,image,description }) 
+       
+      dispatch({
+        type: UPDATE_MENU, 
+        payload: res.data
+      });
+      console.log("superrr")
+    } catch (error) {
+      console.log(error);
+    }
+  };
