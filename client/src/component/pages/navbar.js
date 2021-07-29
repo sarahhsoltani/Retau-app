@@ -1,7 +1,7 @@
 import React from 'react'
 import "../css/home.css"
 import "../css/bootstrap.css"
-
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
   return(
@@ -36,7 +36,8 @@ const Navbar = () => {
                   </li>
                 
                   <li className="nav-item">
-                    <a className="nav-link" href="blog.html">Blog</a>
+                  <Link  className="nav-link   " to="/admin ">Dashboard</Link>
+                    
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="chefs.html">Chefs</a>

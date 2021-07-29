@@ -1,7 +1,7 @@
 const mongoose=require("mongoose")
 const schema=mongoose.Schema
 const menuSchema=new schema({
-    name:{
+    title:{
         type:String,
         require:true
     },

@@ -4,13 +4,13 @@ module.exports={
 
 //Post Menu
     postMenu: async(req,res)=>{
-        const name=req.body.name,
+        const title=req.body.title,
          price =req.body.price,
          image =req.body.image,
          description=req.body.description
        try{
            menu=new Menu({
-               name,
+            title,
                price,
                image,
                description

@@ -1,18 +1,20 @@
-import React from 'react'
+import React, {useEffect }from 'react'
 import "../css/home.css"
 import "../css/bootstrap.css"
 import Navbar from './navbar'
 import Footer from './footer'
-import {useEffect} from "react"
 import {useSelector,useDispatch} from 'react-redux'
-import {allMenu} from "../actions/menu"
+import {getMenuAPI} from "../../redux/actions/menu"
 const Home = () => {
-  const menu = useSelector(state => state.menustore)
-  const dispatch = useDispatch()
+  const datas = useSelector(state => state.menuReducer.datas)
+const loading = useSelector(state => state.menuReducer.loading)
+
+const dispatch = useDispatch()
+
   useEffect(() => {
-  dispatch(allMenu())
-     }, [])
-  console.log("menuuuu",menu)
+  dispatch(getMenuAPI())
+     }, [dispatch])
+  console.log("my data",datas)
   return(
     <div>
         <Navbar/>
@@ -136,11 +138,11 @@ const Home = () => {
              
              </div>
             <div className="d-flex justify-content-around" >
-            {menu.map((el,key )=> (
+            {datas.map((el,key )=> (
               <div className="card w-25 " key={key}>
               <img src={el.image} className="card-img-top" alt="..."/>
               <div className="card-body">
-              <h5 className="card-title">{el.name}</h5>
+              <h5 className="card-title">{el.title}</h5>
                 <p className="card-text">{el.description}</p>
                 <p className="card-text"><small className="menu-price">{el.price}</small></p>
                 <button className="btn btn-oraange">Commander</button>
