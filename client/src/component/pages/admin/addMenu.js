@@ -27,7 +27,7 @@ setShow(false)
   return(
     <div>
     <div className='container mt-5'>
- <Button variant="primary" onClick={handleShow}>
+ <Button className="btn btn-oraange " onClick={handleShow}>
    Add Menu
 </Button>
 

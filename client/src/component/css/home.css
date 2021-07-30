@@ -21,6 +21,7 @@ body{
     letter-spacing: 1px !important;
     font-weight: 400 !important;
     text-transform: uppercase !important;
+    font-size: 15px;
   }
   
   .navbar-nav .nav-item .nav-link:hover{
@@ -276,3 +277,76 @@ body{
   .pied-page a{
     color: white !important;
   }
+  /*-------------- second  -------*/
+  .contact{
+    background-image: url("../../images/bg_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+}
+.contact h1{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+body{
+    background-color: #f9fafd !important;
+
+}
+.title-contact h5{
+    font-size: 1.5625rem;
+    font-weight: bold;
+        color: #232e3c!important;
+}
+.title-contact h2{
+    font-weight: bold;
+    font-size: 2.54141rem;
+    letter-spacing: 1;
+    
+}
+/*----------------Infos   ------------------*/
+.infos {
+    background-color: white ;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.infos i{
+     color: #ff806e!important;
+}
+.infos .hours{
+    font-weight: 700;
+    color: #ff806e;
+}
+.time{
+    color: #748194
+}
+.card-2{
+    margin-right: 10px;
+}
+.card-1{
+    width: 348px !important;
+    margin-right: 13px;
+}
+.nos{
+    font-weight: 700!important;
+    color: #999694 ;
+}
+.admin{
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-right: 17px;
+}
+/* ------------Formulaire -------------*/
+.formulaire h2{
+font-weight: 700;
+}
+.formulaire p{
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5e6e82;
+}
