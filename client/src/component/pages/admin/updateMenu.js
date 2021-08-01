@@ -30,9 +30,10 @@ const UpdateMenu = ({el,id}) => {
 
   return(
     <div>
-    <div className='container mt-5'>
+    <div className='container '>
  <Button className="btn btn-warning" onClick={handleShow}>
-   Modifier
+ <i className="fas  fa-pen-fancy me-2"></i> 
+   Update
 </Button>
 
 <Modal show={show} onHide={handleClose}>

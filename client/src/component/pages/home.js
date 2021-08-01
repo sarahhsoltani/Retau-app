@@ -1,10 +1,12 @@
-import React, {useEffect }from 'react'
+import React, {useEffect } from 'react'
 import "../css/home.css"
 import "../css/bootstrap.css"
 import Navbar from './navbar'
 import Footer from './footer'
 import {useSelector,useDispatch} from 'react-redux'
 import {getMenuAPI} from "../../redux/actions/menu"
+import { Link } from 'react-router-dom'
+import AddOrder from './addOrder'
 const Home = () => {
   const datas = useSelector(state => state.menuReducer.datas)
 
@@ -130,20 +132,31 @@ const dispatch = useDispatch()
          <div className="container text-center">
            <div className="title-menu">
              <h1>Delicious Menu</h1>
-             <div className=" my-para "><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+             <div className=" my-para mb-5"><p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
              
              </div>
-            <div className="d-flex justify-content-around" >
+            <div className="d-flex justify-content-around " >
             {datas.map((el,key )=> (
+              
               <div className="card w-25 " key={key}>
+                <Link to={`/details/${el._id}`}>
               <img src={el.image} className="card-img-top" alt="..."/>
+              </Link>
               <div className="card-body">
+              
               <h5 className="card-title">{el.title}</h5>
+             
                 <p className="card-text">{el.description}</p>
-                <p className="card-text"><small className="menu-price">{el.price}</small></p>
-                <button className="btn btn-oraange">Commander</button>
+               <div  className="d-flex justify-content-around">
+               <p className="card-text"><small className="menu-price">{el.price}</small></p>
+                {/* <Link to={`/details/${el._id}`}>
+                 
+                  </Link> */}
+                  <AddOrder/>
+               </div>
               </div>
             </div>
+           
         ))} 
             </div>
             </div>

@@ -1,18 +1,24 @@
 const mongoose=require('mongoose')
 const schema=mongoose.Schema
 const orderSchema=new schema({
-    name:{
+    nom:{
         type:String,
         require:true
     },
-    price:{
+    address:{
         type:String,
         require:true
     },
-     image:{
-        type:String,
+    number:{
+        type:Number,
         require:true
-    },quantity:{ type: Number, default: 0 }
+    },
+    quantity:{ type: Number
+},
+
+    validation:
+    { type: String }
+
    
 })
 module.exports=order=mongoose.model('order',orderSchema)

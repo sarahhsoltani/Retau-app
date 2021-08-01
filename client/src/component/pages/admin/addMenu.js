@@ -3,6 +3,7 @@ import {Form,Button,Modal} from "react-bootstrap"
 import {useState} from 'react';
 import {addMenuApi} from "../../../redux/actions/menu"
 import {useDispatch} from 'react-redux'
+
 const AddMenu = () => {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -25,15 +26,17 @@ console.log("inpuuuuuuuuuuuut",input)
 setShow(false)
 }
   return(
-    <div>
+    <div className="mt-5"> 
     <div className='container mt-5'>
  <Button className="btn btn-oraange " onClick={handleShow}>
+ <i className="fas me-2 fa-plus-circle"></i> 
    Add Menu
 </Button>
 
 <Modal show={show} onHide={handleClose}>
-<Modal.Header closeButton>
-<Modal.Title className="title-modal">Add Menu</Modal.Title>
+<Modal.Header >
+
+<Modal.Title className="title-modal">Add New Menu</Modal.Title>
 </Modal.Header>
 <Modal.Body>
 <Form >
@@ -58,11 +61,12 @@ setShow(false)
 <Form.Label>description</Form.Label>
 <Form.Control type="text" placeholder="enter description"  name="description" onChange={hanleChange}   />
 </Form.Group>
-<Button className="ms-3  mt-3" variant="secondary" onClick={handleClose}>  
-Close
-</Button>
+<Button   className="ms-3  me-3 btn btn-secondary px-5  mt-3"  onClick={handleClose}>Close</Button>
 
-<Button  onClick={addNewMenu}>add</Button>
+
+<Button
+className="btn btn-oraange  px-5 mt-3" 
+onClick={addNewMenu}>Save </Button>
 </Form>
 </Modal.Body>
 

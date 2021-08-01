@@ -75,7 +75,7 @@ const Footer = () => {
   <div className="container-fluid pied-page text-center pt-3">
       <div className="row">
        
-       <div className="col-md-10">
+       <div className="col-md-10 py-2">
            <p>Copyright ©2021 All rights reserved | By Sarah </p>
        </div>
        <div className="col-md-2">

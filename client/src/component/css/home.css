@@ -21,7 +21,7 @@ body{
     letter-spacing: 1px !important;
     font-weight: 400 !important;
     text-transform: uppercase !important;
-    font-size: 15px;
+    font-size: 14px;
   }
   
   .navbar-nav .nav-item .nav-link:hover{
@@ -195,6 +195,40 @@ body{
   
     font-size: 13px;
   }
+  footer p{
+    font-size: 15px;
+  }
+  .linkto{
+    text-decoration: none;
+  }
+  .linkdin{
+    color: #65b12d;
+  }
+  .twitter{
+    color: #933ec5;
+  }
+  .prog1{
+    width: 75%
+  }
+  .prog2{
+    width: 45%
+  }
+  .prog4{
+    width: 90%
+  }
+  .prog3{
+    width: 62%;
+  }
+  .cog{
+    font-size: 56px;
+    margin-left: 10px;
+    margin-top: 24px;
+  }
+  .burger{
+    font-size: 67px;
+    margin-left: 10px;
+    margin-top: 24px;
+  }
   .modal-footer .submit{
     background-color: white;
     color: #555555;
@@ -282,7 +316,7 @@ body{
     background-image: url("../../images/bg_3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    height: 50vh;
 
 }
 .contact h1{

@@ -1,4 +1,4 @@
-import {ADD_MENU ,GET_MENU,DELETE_MENU,UPDATE_MENU } from "./types"
+import {ADD_MENU ,GET_MENU,DELETE_MENU,UPDATE_MENU,GET_ONEMENU } from "./types"
 // import { GET_MENU } from "../actions/types";
 // export function allMenu( ) {
 //     return async dispatch =>{
@@ -137,6 +137,17 @@ export const updateMenu = (id,title, price,image,description ) => async dispatch
         payload: res.data
       });
       console.log("superrr")
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  export const getOneMenu = id => async dispatch => {
+    try {
+      const res = await axios.get(`http://localhost:4000/RestoApp/menu/getOne/${id}`);
+      dispatch({
+        type: GET_ONEMENU,
+        payload: res.data
+      });
     } catch (error) {
       console.log(error);
     }

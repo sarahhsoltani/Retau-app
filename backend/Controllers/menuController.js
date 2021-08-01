@@ -34,11 +34,20 @@ module.exports={
             res.status(500).send('server error')
         }
     },
-    //GetById Menu
-    getMenusById:async (req,res)=>{
-     
-        res.send(' menu by id')
-    },
+    // Get oneMenu by id
+getOneMenu:  async (req, res) => {
+    try {
+      const menu = await Menu.findById(req.params.id);
+      if (!menu)    
+        return res
+          .status(404)
+          .send({ msg: 'The Menu with the given ID was not found.' });
+      res.send(menu);
+    } catch (error) {
+      res.status(500).send('Server erorr');
+    }
+  },
+
     //Delete Menu
     deleteMenu:async (req,res)=>{
       try{

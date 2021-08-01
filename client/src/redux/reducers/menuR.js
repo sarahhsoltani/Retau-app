@@ -1,7 +1,8 @@
-import {ADD_MENU,GET_MENU,DELETE_MENU, UPDATE_MENU} from "../actions/types"
+import {ADD_MENU,GET_MENU,DELETE_MENU, UPDATE_MENU,GET_ONEMENU} from "../actions/types"
 const initialState={
   datas : [],
-  loading:true
+  loading:true,
+  data:null
 } 
 
  export const menuReducer = ( state = initialState, action) => {
@@ -36,6 +37,12 @@ const initialState={
             data._id === payload._id ? payload : data
           )
         };
+        case GET_ONEMENU:
+          return {
+            ...state,
+            data: payload,
+            loading: false
+          };
   }
   return state
 };

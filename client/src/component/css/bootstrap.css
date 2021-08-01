@@ -4794,7 +4794,7 @@ border: 2px solid #000;
 }
 .progress {
   display: flex;
-  height: 1rem;
+  height: 10px;
   overflow: hidden;
   font-size: 0.75rem;
   background-color: #e9ecef;
@@ -6526,7 +6526,9 @@ border: 2px solid #000;
 .w-25 {
   width: 25% !important;
 }
-
+.w-10{
+  width: 340px;
+}
 .w-50 {
   width: 50% !important;
 }
@@ -6912,7 +6914,12 @@ border: 2px solid #000;
 .mt-5 {
   margin-top: 3rem !important;
 }
-
+.mt-4 {
+  margin-top: 4rem !important;
+}
+.mt-6 {
+  margin-top: 6rem !important;
+}
 .mt-auto {
   margin-top: auto !important;
 }
